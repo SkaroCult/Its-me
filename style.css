@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-family: 'Cormorant', serif;
+}
+a{
+    color: white;
+}
+
+/* Code */
+body{
+    background-color: black;
+}
+main{
+    height: 100vh;
+    max-width: 2560px;
+    background: url(./img/MKFM.jpg) center -500px no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .tela{
+    background: url(./img/MS.jpg) -300px center repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 85%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.titulo{
+    position: relative;
+    margin: 10%;
+}
+main .titulo h1{
+    font-size: 60px;
+    font-weight: 700;
+    transition: 1s ease-in-out 0.5s;
+    filter: drop-shadow(10px 5px 2px #9b3030);
+}
+
+main h2{
+    font-size: 25px;
+    font-weight: 300;
+    transition: 1s ease-out 0.5s;
+    filter: drop-shadow(30px 10px 4px #4444dd);
+}
