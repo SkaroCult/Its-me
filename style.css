@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,700&display=swap');
 
+@font-face {
+    font-family: fina;
+    src: url(./fonts/stf-oblongus.ttf);
+}
+@font-face {
+    font-family: grossa;
+    src: url(./fonts/Nortune-Black.ttf);
+}
 /* Reset */
 *{
     margin: 0;
@@ -18,7 +26,8 @@ a{
 body{
     background-color: black;
 }
-main{
+
+.back{
     height: 100vh;
     max-width: 2560px;
     background: url(./img/MKFM.jpg) center -500px no-repeat;
@@ -27,30 +36,96 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s ease-out 0.5s ;
 }
-main .tela{
-    background: url(./img/MS.jpg) -300px center repeat;
+.back .tela{
+    background: url(./img/MS.jpg) -250px center repeat;
     background-size: cover;
     border-radius: 20px;
     width: 85%;
     height: 80%;
-    display: flex;
-    justify-content: flex-end;
-}
-.titulo{
     position: relative;
-    margin: 10%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+.txt{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.titulo,.link{
+    margin: 10%
 }
 main .titulo h1{
+    font-family: grossa;
     font-size: 60px;
     font-weight: 700;
-    transition: 1s ease-in-out 0.5s;
+    transition: 1s ease 0.5s;
     filter: drop-shadow(10px 5px 2px #9b3030);
 }
 
 main h2{
-    font-size: 25px;
+    font-family: fina;
+    font-size: 30px;
     font-weight: 300;
-    transition: 1s ease-out 0.5s;
+    transition: 1s ease-in;
     filter: drop-shadow(30px 10px 4px #4444dd);
+}
+a{
+    font-size: 50px;
+    animation: flux 1s alternate infinite;
+
+}
+@-webkit-keyframes flux{
+    0%{
+        
+    }
+    100%{
+        filter: drop-shadow(5px 5px 8px #3912e9);
+    }
+}
+
+/* Mobile */
+
+.backmo{
+    height: 100vh;
+    max-width: 2560px;
+    background: url(./img/MKFM.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-out 0.5s ;
+    display:none;
+}
+.backmo .tela{
+    background: url(./img/MS.jpg) center center repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 85%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.backmo .txt{
+    flex-direction: row;
+    height: 15%;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+}
+
+.backmo .titulo h2{
+    display: none;
 }
