@@ -6,3 +6,13 @@
         display: flex;
     }
 }
+@media (max-width:450px) {
+    .backmo .tela{
+        background: url(./img/MKF.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    .backmo .txt{
+        flex-direction: column;
+        height: auto;
+    }
+}
