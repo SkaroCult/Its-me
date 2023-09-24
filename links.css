@@ -65,8 +65,12 @@ a:hover{
     .cont ul{
         width: 100%;
     }
-    .cont ul li, .cont ul li a{
+    .discord, .cont ul li a{
         color: rgb(226, 17, 17);
         font-size: 35px;
+        background-color: rgba(0, 0, 0, 0.459);
+        border-radius: 45px;
+        padding: 10px;
+        margin:10px;
     }
 }
