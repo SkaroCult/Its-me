@@ -57,7 +57,7 @@ body{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .titulo,.link{
     margin: 10%
@@ -77,16 +77,26 @@ main h2{
     transition: 1s ease-in;
     filter: drop-shadow(30px 10px 4px #4444dd);
 }
-a{
-    font-size: 50px;
+
+.back a{
     animation: flux 1s alternate infinite;
+    display: flex;
+    justify-self: center;
+    opacity: 0.7;
 
 }
-@-webkit-keyframes flux{
+img{
+    width: 120px;
+    padding: 20px;
+}
+@keyframes flux{
     0%{
-        
+        background-color: #6145df;
+        border-radius: 40px;
     }
     100%{
+        background-color: #3912e9;
+        border-radius: 40px;
         filter: drop-shadow(5px 5px 8px #3912e9);
     }
 }
