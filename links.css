@@ -37,3 +37,36 @@ a:hover{
     transition: 0.5s;
     filter: drop-shadow(0px 0px 10px rgb(248, 147, 147));
 }
+
+/*Responsivo*/
+@media (max-width:1000px) {
+    .cont{
+        background: url(./img/Kuns.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    .cont ul li{
+        font-size: 30px;
+    }
+}
+@media (max-width:600px) {
+    .cont{
+        background: url(./img/Kuns.jpg) -420px center no-repeat;
+        background-size: cover;
+    }
+    .cont ul li{
+        font-size: 25px;
+    }
+}
+@media (max-width:400px) {
+    .cont{
+        background: url(./img/MST.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    .cont ul{
+        width: 100%;
+    }
+    .cont ul li, .cont ul li a{
+        color: rgb(226, 17, 17);
+        font-size: 35px;
+    }
+}
